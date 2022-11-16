@@ -1,26 +1,13 @@
-import { useState } from "react";
-
+import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 const Home = () => {
-
-    const handleClick = (e) =>{
-        
-    }
-
-
-
-    // const handleCickAgain = (name) => 
-    // {
-    //     console.log('Hello '+ name);
-    // }
+    const {data, isPending, error} = useFetch('http://localhost:8000/blogs');
     return (
         <div className="home">
-            <h2>Homepage</h2>
-            <button onClick={handleClick}>Click Here</button>
-            {/* <button onClick={() => {
-                handleCickAgain('kumail');
-            }}>Click Here Again</button> */}
+            {error && <div> {error} </div>}
+            {isPending && <div> Loading.... </div>}
+            { data && <BlogList blogs = {data} title = "All Blogs"/>} 
         </div>
       );
 }
- 
 export default Home;
