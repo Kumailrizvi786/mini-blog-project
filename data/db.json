@@ -1,17 +1,22 @@
 {
-    "blogs":[
-        {
-            "title": "My first Blog",
-            "body": "Hello this is my first blog i'm writing this to practoce my REACT app and i need it to have some content.",
-            "author": "kumail",
-            "id": 1
-        },
-        {
-            "title": "My second Blog",
-            "body": "Hi again this is my second blog but i have changed the author .",
-            "author": "mario",
-            "id": 2
-        }   
-    ]
-
+  "blogs": [
+    {
+      "title": "My first Blog",
+      "body": "Hello this is my first blog i'm writing this to practoce my REACT app and i need it to have some content.",
+      "author": "kumail",
+      "id": 1
+    },
+    {
+      "title": "My second Blog",
+      "body": "Hi again this is my second blog but i have changed the author .",
+      "author": "mario",
+      "id": 2
+    },
+    {
+      "title": "Third Blog",
+      "body": "This Blog is about FIFA World Cup 2022 in Qatar.",
+      "author": "kumail",
+      "id": 3
+    }
+  ]
 }

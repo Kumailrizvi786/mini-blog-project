@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Create from "./Create";
+import BlogDetail from "./BlogDetail";
 
 const Navbar = () => {
     return (
@@ -8,7 +9,7 @@ const Navbar = () => {
             <div className="links">
                 <Link to = "./"> Home </Link>
                 <Link to = "/Create"> Create a new Blog</Link>
-                <Link to = "./BlogDetail/"> Blogs By Id</Link>
+                <Link to = "/BlogDetail"> Blogs By Id</Link>
             </div>
         </nav>
       );

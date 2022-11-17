@@ -16,8 +16,10 @@ function App() {
             <Route exact path='/'>
               <Home />
             </Route>
-            <Route  path='/Create'  element = {<Create />} /> 
-            <Route  path='/BlogDetail'>
+            <Route  path='/Create'> 
+              <Create />
+            </Route> 
+            <Route  path='/BlogDetail/:id'>
               <BlogDetail />
             </Route>
           </Switch>     
